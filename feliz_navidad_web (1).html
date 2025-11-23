@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feliz Navidad Bro</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #c00000;
+            font-family: 'Segoe UI', sans-serif;
+            color: white;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+            .snow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background-image: url('https://i.imgur.com/5YjZ9vR.png');
+            animation: snow 10s linear infinite;
+            opacity: 0.7;
+        }
+        @keyframes snow {
+            0% { background-position: 0 0; }
+            100% { background-position: 0 1000px; }
+        }
+            .lights {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background-image: url('https://i.imgur.com/9qP1kxn.png');
+            background-size: cover;
+            animation: blink 2s infinite ease-in-out;
+            opacity: 0.9;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 0.9; }
+            50% { opacity: 0.4; }
+        }
+    </style>
+</head>
+<body>
+    <h1>🎄 Feliz Navidad Bro 🎅</h1>
+    <audio autoplay loop>
+        <!-- Debes subir tu propio archivo MP3 de "Snow Flower – V (BTS)" a Google Drive / Dropbox y pegar aquí el link directo -->
+        <source src="/mnt/data/WhatsApp Audio 2025-11-23 at 5.12.24 PM.mpeg" type="audio/mpeg">
+    </audio>
+
+    <div class="snow"></div>
+    <div class="lights"></div>
+</body>
+</html>
